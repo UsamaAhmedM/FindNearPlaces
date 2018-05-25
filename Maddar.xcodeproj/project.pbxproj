@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8428303020B65B62008A952A /* NetworkDAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428302F20B65B62008A952A /* NetworkDAL.swift */; };
+		8428303320B65D7D008A952A /* PlacesBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428303220B65D7D008A952A /* PlacesBL.swift */; };
+		8428303E20B6E28F008A952A /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428303520B6E28E008A952A /* Results.swift */; };
+		8428303F20B6E28F008A952A /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428303620B6E28F008A952A /* Geometry.swift */; };
+		8428304020B6E28F008A952A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428303720B6E28F008A952A /* Location.swift */; };
+		8428304420B6E28F008A952A /* ApiResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428303B20B6E28F008A952A /* ApiResult.swift */; };
+		8428304820B6E408008A952A /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428304720B6E408008A952A /* Parser.swift */; };
+		8428305220B6F9BE008A952A /* GMSCustomMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428305120B6F9BE008A952A /* GMSCustomMarker.swift */; };
+		8428305420B71B4A008A952A /* ShowRoadViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428305320B71B4A008A952A /* ShowRoadViewContoller.swift */; };
+		8428305720B71B6F008A952A /* ShowRoadScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8428305620B71B6F008A952A /* ShowRoadScreen.storyboard */; };
+		8428305920B746A9008A952A /* ShowRoadPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428305820B746A9008A952A /* ShowRoadPresenter.swift */; };
+		8428305D20B747CB008A952A /* ShowRoadProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8428305C20B747CB008A952A /* ShowRoadProtocol.swift */; };
+		849CB8EA20B5FBDC00B1073F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849CB8E920B5FBDC00B1073F /* AppDelegate.swift */; };
+		849CB8EF20B5FBDC00B1073F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849CB8ED20B5FBDC00B1073F /* Main.storyboard */; };
+		849CB8F120B5FBDC00B1073F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849CB8F020B5FBDC00B1073F /* Images.xcassets */; };
+		849CB8F420B5FBDC00B1073F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849CB8F220B5FBDC00B1073F /* LaunchScreen.storyboard */; };
+		849CB90620B5FE2700B1073F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849CB90520B5FE2700B1073F /* HomeViewController.swift */; };
+		849CB90D20B605A500B1073F /* HomeViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849CB90C20B605A500B1073F /* HomeViewPresenter.swift */; };
+		849CB90F20B60AB700B1073F /* HomeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849CB90E20B60AB700B1073F /* HomeViewProtocol.swift */; };
+		849CB91120B618FD00B1073F /* HomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849CB91020B618FD00B1073F /* HomeScreen.storyboard */; };
+		8D10ED57731DCF7BF4F894A1 /* Pods_Maddar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098B4C5FE47BDF0D12F0C730 /* Pods_Maddar.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		098B4C5FE47BDF0D12F0C730 /* Pods_Maddar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Maddar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F6AD6AACCA39B3C1548C84E /* Pods-Maddar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maddar.release.xcconfig"; path = "Pods/Target Support Files/Pods-Maddar/Pods-Maddar.release.xcconfig"; sourceTree = "<group>"; };
+		8428302F20B65B62008A952A /* NetworkDAL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDAL.swift; sourceTree = "<group>"; };
+		8428303220B65D7D008A952A /* PlacesBL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesBL.swift; sourceTree = "<group>"; };
+		8428303520B6E28E008A952A /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		8428303620B6E28F008A952A /* Geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
+		8428303720B6E28F008A952A /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		8428303B20B6E28F008A952A /* ApiResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResult.swift; sourceTree = "<group>"; };
+		8428304720B6E408008A952A /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		8428305120B6F9BE008A952A /* GMSCustomMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMSCustomMarker.swift; sourceTree = "<group>"; };
+		8428305320B71B4A008A952A /* ShowRoadViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRoadViewContoller.swift; sourceTree = "<group>"; };
+		8428305620B71B6F008A952A /* ShowRoadScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShowRoadScreen.storyboard; sourceTree = "<group>"; };
+		8428305820B746A9008A952A /* ShowRoadPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRoadPresenter.swift; sourceTree = "<group>"; };
+		8428305C20B747CB008A952A /* ShowRoadProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRoadProtocol.swift; sourceTree = "<group>"; };
+		849CB8E620B5FBDC00B1073F /* Maddar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maddar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		849CB8E920B5FBDC00B1073F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		849CB8EE20B5FBDC00B1073F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		849CB8F020B5FBDC00B1073F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		849CB8F320B5FBDC00B1073F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		849CB8F520B5FBDC00B1073F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		849CB90520B5FE2700B1073F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		849CB90C20B605A500B1073F /* HomeViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewPresenter.swift; sourceTree = "<group>"; };
+		849CB90E20B60AB700B1073F /* HomeViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewProtocol.swift; sourceTree = "<group>"; };
+		849CB91020B618FD00B1073F /* HomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeScreen.storyboard; sourceTree = "<group>"; };
+		A00231980BFC92420FADB5CD /* Pods-Maddar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maddar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Maddar/Pods-Maddar.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		849CB8E320B5FBDC00B1073F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D10ED57731DCF7BF4F894A1 /* Pods_Maddar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29727CA3B3E97D9883393E02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				098B4C5FE47BDF0D12F0C730 /* Pods_Maddar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		528B99E863CD78B85E22F7B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A00231980BFC92420FADB5CD /* Pods-Maddar.debug.xcconfig */,
+				6F6AD6AACCA39B3C1548C84E /* Pods-Maddar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8428302E20B65B3C008A952A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8428304920B6E40F008A952A /* Parser */,
+				8428303420B6E27B008A952A /* Pojos */,
+				8428302F20B65B62008A952A /* NetworkDAL.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8428303120B65D66008A952A /* BusnissL */ = {
+			isa = PBXGroup;
+			children = (
+				8428303220B65D7D008A952A /* PlacesBL.swift */,
+			);
+			path = BusnissL;
+			sourceTree = "<group>";
+		};
+		8428303420B6E27B008A952A /* Pojos */ = {
+			isa = PBXGroup;
+			children = (
+				8428303B20B6E28F008A952A /* ApiResult.swift */,
+				8428303520B6E28E008A952A /* Results.swift */,
+				8428303620B6E28F008A952A /* Geometry.swift */,
+				8428303720B6E28F008A952A /* Location.swift */,
+			);
+			path = Pojos;
+			sourceTree = "<group>";
+		};
+		8428304920B6E40F008A952A /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				8428304720B6E408008A952A /* Parser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		8428304A20B6F7CB008A952A /* CustomMapMarker */ = {
+			isa = PBXGroup;
+			children = (
+				8428305120B6F9BE008A952A /* GMSCustomMarker.swift */,
+			);
+			path = CustomMapMarker;
+			sourceTree = "<group>";
+		};
+		8428305520B71B4F008A952A /* ShowRoadScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8428305B20B747AF008A952A /* ShowRoadProtocol */,
+				8428305320B71B4A008A952A /* ShowRoadViewContoller.swift */,
+				8428305820B746A9008A952A /* ShowRoadPresenter.swift */,
+				8428305620B71B6F008A952A /* ShowRoadScreen.storyboard */,
+			);
+			path = ShowRoadScreen;
+			sourceTree = "<group>";
+		};
+		8428305A20B7479A008A952A /* HomeScreenProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				849CB90E20B60AB700B1073F /* HomeViewProtocol.swift */,
+			);
+			path = HomeScreenProtocol;
+			sourceTree = "<group>";
+		};
+		8428305B20B747AF008A952A /* ShowRoadProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				8428305C20B747CB008A952A /* ShowRoadProtocol.swift */,
+			);
+			path = ShowRoadProtocol;
+			sourceTree = "<group>";
+		};
+		849CB8DD20B5FBDC00B1073F = {
+			isa = PBXGroup;
+			children = (
+				849CB8E820B5FBDC00B1073F /* Maddar */,
+				849CB8E720B5FBDC00B1073F /* Products */,
+				528B99E863CD78B85E22F7B3 /* Pods */,
+				29727CA3B3E97D9883393E02 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		849CB8E720B5FBDC00B1073F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				849CB8E620B5FBDC00B1073F /* Maddar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		849CB8E820B5FBDC00B1073F /* Maddar */ = {
+			isa = PBXGroup;
+			children = (
+				8428303120B65D66008A952A /* BusnissL */,
+				8428302E20B65B3C008A952A /* Model */,
+				849CB90320B5FDF400B1073F /* View */,
+				849CB8E920B5FBDC00B1073F /* AppDelegate.swift */,
+				849CB8ED20B5FBDC00B1073F /* Main.storyboard */,
+				849CB8F020B5FBDC00B1073F /* Images.xcassets */,
+				849CB8F220B5FBDC00B1073F /* LaunchScreen.storyboard */,
+				849CB8F520B5FBDC00B1073F /* Info.plist */,
+			);
+			path = Maddar;
+			sourceTree = "<group>";
+		};
+		849CB90320B5FDF400B1073F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				849CB90420B5FE0600B1073F /* HomeScreen */,
+				8428305520B71B4F008A952A /* ShowRoadScreen */,
+			);
+			name = View;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		849CB90420B5FE0600B1073F /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8428305A20B7479A008A952A /* HomeScreenProtocol */,
+				8428304A20B6F7CB008A952A /* CustomMapMarker */,
+				849CB90520B5FE2700B1073F /* HomeViewController.swift */,
+				849CB90C20B605A500B1073F /* HomeViewPresenter.swift */,
+				849CB91020B618FD00B1073F /* HomeScreen.storyboard */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		849CB8E520B5FBDC00B1073F /* Maddar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 849CB8F820B5FBDC00B1073F /* Build configuration list for PBXNativeTarget "Maddar" */;
+			buildPhases = (
+				E0024D4553DD64EE8B8E83EC /* [CP] Check Pods Manifest.lock */,
+				849CB8E220B5FBDC00B1073F /* Sources */,
+				849CB8E320B5FBDC00B1073F /* Frameworks */,
+				849CB8E420B5FBDC00B1073F /* Resources */,
+				D68C73A78C0BC55993F1E94E /* [CP] Embed Pods Frameworks */,
+				3A72D688E496D0424BB17946 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Maddar;
+			productName = Maddar;
+			productReference = 849CB8E620B5FBDC00B1073F /* Maddar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		849CB8DE20B5FBDC00B1073F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Admin;
+				TargetAttributes = {
+					849CB8E520B5FBDC00B1073F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 849CB8E120B5FBDC00B1073F /* Build configuration list for PBXProject "Maddar" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 849CB8DD20B5FBDC00B1073F;
+			productRefGroup = 849CB8E720B5FBDC00B1073F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				849CB8E520B5FBDC00B1073F /* Maddar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		849CB8E420B5FBDC00B1073F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849CB8F420B5FBDC00B1073F /* LaunchScreen.storyboard in Resources */,
+				849CB91120B618FD00B1073F /* HomeScreen.storyboard in Resources */,
+				849CB8F120B5FBDC00B1073F /* Images.xcassets in Resources */,
+				849CB8EF20B5FBDC00B1073F /* Main.storyboard in Resources */,
+				8428305720B71B6F008A952A /* ShowRoadScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A72D688E496D0424BB17946 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Maddar/Pods-Maddar-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Maddar/Pods-Maddar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D68C73A78C0BC55993F1E94E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Maddar/Pods-Maddar-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Maddar/Pods-Maddar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0024D4553DD64EE8B8E83EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Maddar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		849CB8E220B5FBDC00B1073F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849CB8EA20B5FBDC00B1073F /* AppDelegate.swift in Sources */,
+				8428305D20B747CB008A952A /* ShowRoadProtocol.swift in Sources */,
+				8428305420B71B4A008A952A /* ShowRoadViewContoller.swift in Sources */,
+				8428304820B6E408008A952A /* Parser.swift in Sources */,
+				8428305920B746A9008A952A /* ShowRoadPresenter.swift in Sources */,
+				849CB90620B5FE2700B1073F /* HomeViewController.swift in Sources */,
+				8428305220B6F9BE008A952A /* GMSCustomMarker.swift in Sources */,
+				849CB90F20B60AB700B1073F /* HomeViewProtocol.swift in Sources */,
+				8428303E20B6E28F008A952A /* Results.swift in Sources */,
+				8428304020B6E28F008A952A /* Location.swift in Sources */,
+				8428303320B65D7D008A952A /* PlacesBL.swift in Sources */,
+				8428304420B6E28F008A952A /* ApiResult.swift in Sources */,
+				8428303F20B6E28F008A952A /* Geometry.swift in Sources */,
+				849CB90D20B605A500B1073F /* HomeViewPresenter.swift in Sources */,
+				8428303020B65B62008A952A /* NetworkDAL.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		849CB8ED20B5FBDC00B1073F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				849CB8EE20B5FBDC00B1073F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		849CB8F220B5FBDC00B1073F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				849CB8F320B5FBDC00B1073F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		849CB8F620B5FBDC00B1073F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		849CB8F720B5FBDC00B1073F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		849CB8F920B5FBDC00B1073F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A00231980BFC92420FADB5CD /* Pods-Maddar.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Maddar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JETS.Maddar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		849CB8FA20B5FBDC00B1073F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F6AD6AACCA39B3C1548C84E /* Pods-Maddar.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Maddar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JETS.Maddar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		849CB8E120B5FBDC00B1073F /* Build configuration list for PBXProject "Maddar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849CB8F620B5FBDC00B1073F /* Debug */,
+				849CB8F720B5FBDC00B1073F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		849CB8F820B5FBDC00B1073F /* Build configuration list for PBXNativeTarget "Maddar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849CB8F920B5FBDC00B1073F /* Debug */,
+				849CB8FA20B5FBDC00B1073F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 849CB8DE20B5FBDC00B1073F /* Project object */;
+}

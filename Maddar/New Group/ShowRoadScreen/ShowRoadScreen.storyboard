@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q0M-nw-Bme">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Show Road View Contoller-->
+        <scene sceneID="BbC-r4-Pcc">
+            <objects>
+                <viewController storyboardIdentifier="ShowRoadViewContoller" id="q0M-nw-Bme" customClass="ShowRoadViewContoller" customModule="Maddar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WMt-PW-XYc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CV6-bV-p0n">
+                                <rect key="frame" x="0.0" y="20" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vDJ-6x-Y94">
+                                <rect key="frame" x="0.0" y="46" width="375" height="621"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CV6-bV-p0n" firstAttribute="trailing" secondItem="Jbc-cf-ElS" secondAttribute="trailing" id="IA4-bL-I6P"/>
+                            <constraint firstItem="CV6-bV-p0n" firstAttribute="leading" secondItem="Jbc-cf-ElS" secondAttribute="leading" id="Jzc-iK-TPI"/>
+                            <constraint firstItem="vDJ-6x-Y94" firstAttribute="top" secondItem="CV6-bV-p0n" secondAttribute="bottom" constant="5" id="aBf-kh-wAo"/>
+                            <constraint firstItem="vDJ-6x-Y94" firstAttribute="bottom" secondItem="Jbc-cf-ElS" secondAttribute="bottom" id="dN6-cN-dpp"/>
+                            <constraint firstItem="vDJ-6x-Y94" firstAttribute="leading" secondItem="Jbc-cf-ElS" secondAttribute="leading" id="eKA-XY-6gn"/>
+                            <constraint firstItem="vDJ-6x-Y94" firstAttribute="trailing" secondItem="Jbc-cf-ElS" secondAttribute="trailing" id="qTi-Mt-3uK"/>
+                            <constraint firstItem="CV6-bV-p0n" firstAttribute="top" secondItem="Jbc-cf-ElS" secondAttribute="top" id="s7O-Y5-BRY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Jbc-cf-ElS"/>
+                    </view>
+                    <connections>
+                        <outlet property="addressLabel" destination="CV6-bV-p0n" id="Mbe-Mk-msS"/>
+                        <outlet property="roadImageView" destination="vDJ-6x-Y94" id="mwJ-lP-1Dx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hh4-iG-7ki" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="96.7016491754123"/>
+        </scene>
+    </scenes>
+</document>

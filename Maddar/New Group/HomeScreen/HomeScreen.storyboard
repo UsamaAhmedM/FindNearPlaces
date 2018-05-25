@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vyq-z2-T1n">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeScreen-->
+        <scene sceneID="WzC-cb-BDe">
+            <objects>
+                <viewController storyboardIdentifier="HomeScreen" title="HomeScreen" id="Vyq-z2-T1n" customClass="HomeViewController" customModule="Maddar" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eQ0-au-bU7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6W4-kI-Sge">
+                                <rect key="frame" x="85" y="44" width="205" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fY5-HW-94S">
+                                        <rect key="frame" x="0.0" y="0.0" width="42" height="30"/>
+                                        <state key="normal" title="Banks"/>
+                                        <connections>
+                                            <action selector="didTapBanksButton:" destination="Vyq-z2-T1n" eventType="touchUpInside" id="3Ji-Pj-dYJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omd-BH-aZc">
+                                        <rect key="frame" x="142" y="0.0" width="63" height="30"/>
+                                        <state key="normal" title="Mosques"/>
+                                        <connections>
+                                            <action selector="didTapMosquesButton:" destination="Vyq-z2-T1n" eventType="touchUpInside" id="WdZ-AQ-nN9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="omd-BH-aZc" secondAttribute="bottom" id="Juh-Nl-wUU"/>
+                                    <constraint firstAttribute="trailing" secondItem="omd-BH-aZc" secondAttribute="trailing" id="co2-jd-jtr"/>
+                                    <constraint firstItem="omd-BH-aZc" firstAttribute="top" secondItem="6W4-kI-Sge" secondAttribute="top" id="eBX-NZ-6uH"/>
+                                    <constraint firstItem="omd-BH-aZc" firstAttribute="leading" secondItem="fY5-HW-94S" secondAttribute="trailing" constant="100" id="eXO-To-CFf"/>
+                                    <constraint firstItem="fY5-HW-94S" firstAttribute="leading" secondItem="6W4-kI-Sge" secondAttribute="leading" id="lbI-Nf-9ZK"/>
+                                    <constraint firstItem="fY5-HW-94S" firstAttribute="top" secondItem="6W4-kI-Sge" secondAttribute="top" id="qsG-Rn-GeJ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jtT-ai-9ee" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="98" width="375" height="569"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jtT-ai-9ee" firstAttribute="bottom" secondItem="jVy-8d-lV5" secondAttribute="bottom" id="41G-s4-bsJ"/>
+                            <constraint firstItem="jtT-ai-9ee" firstAttribute="trailing" secondItem="jVy-8d-lV5" secondAttribute="trailing" id="AXy-pY-RPY"/>
+                            <constraint firstItem="6W4-kI-Sge" firstAttribute="top" secondItem="jVy-8d-lV5" secondAttribute="top" constant="24" id="Asw-5E-ecu"/>
+                            <constraint firstItem="6W4-kI-Sge" firstAttribute="centerX" secondItem="jVy-8d-lV5" secondAttribute="centerX" id="QI5-VR-6S5"/>
+                            <constraint firstItem="jtT-ai-9ee" firstAttribute="leading" secondItem="jVy-8d-lV5" secondAttribute="leading" id="SHh-CA-PIe"/>
+                            <constraint firstItem="jtT-ai-9ee" firstAttribute="top" secondItem="6W4-kI-Sge" secondAttribute="bottom" constant="24" id="WFu-RG-Jts"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jVy-8d-lV5"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Hgh-Fc-inC"/>
+                    <connections>
+                        <outlet property="map" destination="jtT-ai-9ee" id="iHj-PD-jMW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fu1-LV-I9Q" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1775.2" y="40.929535232383813"/>
+        </scene>
+    </scenes>
+</document>
